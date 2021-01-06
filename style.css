@@ -5,6 +5,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0px;
+    padding: 0px;
 
 }
 h1,h2,h3,h4{
@@ -14,8 +15,13 @@ h1,h2,h3,h4{
     width: 1170px;
     margin: auto;
 }
+    .menu {
+        overflow: hidden;
+    }
+
 ul.menuitems {
     list-style: none;
+    margin: 0px;
 }
 
 ul.menuitems li a {
@@ -25,7 +31,9 @@ ul.menuitems li a {
     font-weight: 500;
     font-size: 16px;
     padding: 20px;
-    transition: 0.7s;
+    
+    text-transform: uppercase;
+    cursor: pointer;
 }
 header#topbar {
     background-color: #ddd;
@@ -38,6 +46,7 @@ ul.menuitems li:hover a {
     width: 540px;
     float: left;
     margin-right: 90px;
+    overflow: hidden;
 }
 .slider:last-child {
     margin-right: 0px;
@@ -45,11 +54,11 @@ ul.menuitems li:hover a {
 
 .slider img {
     width: 100%;
-    margin-top: -90px;
+    margin-top: 50px;
 }
 
 #home-sec {
-    height: 680px;
+    height: 600px;
 }
 .slider h1 {
     text-transform: uppercase;
@@ -120,9 +129,7 @@ a.link-btn:hover {
     background: linear-gradient(45deg, #ada34b, #FF9800);
     width: 135px;
 }
-#left-slider img {
-    margin-top: -100px;
-}
+#left-slider img {margin-top: 0;}
 section#protfolio {
     background: #E5E5E5;
     position: relative;
@@ -135,7 +142,7 @@ section#protfolio {
     display: inline-block;
     margin-top: 100px;
     margin-bottom: 100px;
-    margin-left: 308px;
+    margin-left: 360px;
     color: #363958;
     }
     
@@ -150,6 +157,11 @@ span.box-title {
     margin-right: 30px;
     background: white;
 }
+.single-box.box-contant h1 {color: #363958;}
+
+.single-box.box-contant p {
+    color: #363958;
+}
 
 .single-box img {
     width: 100%;
@@ -163,8 +175,8 @@ span.box-title {
     background-position: center;
     width: 85%;
     background-size: contain;
-    height: 313px;
-    margin-left: auto;
+    margin: auto;
+    margin-top: 70px;
 }
 #last-sec{
     height: 400px;
@@ -175,5 +187,19 @@ span.box-title {
     display: inline-block;
     color: white;
     text-transform: uppercase;
-    padding: 45px;
+    padding: 60px;
+    padding-top: 50px;
+}
+a.last-btn {
+    text-align: center;
+    text-decoration: none;
+    background: #FF8063;
+    padding: 18px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 101px;
+    margin-left: 205px;
 }
