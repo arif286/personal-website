@@ -38,6 +38,7 @@ nav a {
     text-transform: uppercase;
     cursor: pointer;
     transition: hover 2s;
+    display: flex;
 }
 header#topbar {
     background-color: #ddd;
@@ -362,7 +363,19 @@ ul.social-list li:hover a {
             width: 80%;
             margin: auto;
         }
-        
-         
+        .slider p{
+            margin-bottom: 2em;
+            text-align: justify;
+        }
+        .slider h1{
+            font-size: 6.5rem;
+        }
+        nav ul li{
+           width: 77.6em;
+        }
+        .nav ul li a {
+           align-items: center;
+        }
+          
 }
 
